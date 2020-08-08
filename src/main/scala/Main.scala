@@ -1,7 +1,8 @@
 import scala.io.Source
 import scala.collection.mutable.Set
-object Main extends App {
 
+
+object Day01 extends App {
   val deltas = Source.fromFile("data/01-1.txt").getLines().map (_.toInt).to(List)
 
   println(deltas.sum)
